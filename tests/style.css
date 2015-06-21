@@ -13,7 +13,7 @@
 }
 
 .cnvs-button:after {
-  content: ' ';
+  content: " ";
   top: -4px;
   bottom: -4px;
   left: -4px;
@@ -71,6 +71,7 @@
   background: #167ac6;
   fill: #fff;
   color: #fff;
+  border: 0;
   border-radius: 50%;
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.23), 0 3px 12px rgba(0, 0, 0, 0.16);
 }
@@ -79,14 +80,12 @@
 .cnvs-button--circular.pseudo-hover {
   background: #2895e7;
   color: #fff;
-  border-color: transparent;
 }
 
 .cnvs-button--circular:active,
 .cnvs-button--circular.pseudo-active {
   background: #136caf;
   color: #fff;
-  border-color: transparent;
 }
 
 * {

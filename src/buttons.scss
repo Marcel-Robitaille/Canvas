@@ -30,7 +30,7 @@ $shadow: 0 3px 12px rgba(0, 0, 0, .23), 0 3px 12px rgba(0, 0, 0, .16);
 	// 	border-color: $blue;
 	// }
 	&:after{
-		content: ' ';
+		content: " ";
 		top: -4px;
 		bottom: -4px;
 		left: -4px;
@@ -76,16 +76,15 @@ $shadow: 0 3px 12px rgba(0, 0, 0, .23), 0 3px 12px rgba(0, 0, 0, .16);
 	background: $blue;
 	fill: #fff;
 	color: #fff;
+	border: 0;
 	border-radius: 50%;
 	box-shadow: $shadow;
 	&:hover{
 		background: lighten($blue, 10);
 		color: #fff;
-		border-color: transparent;
 	}
 	&:active{
 		background: darken($blue, 5);
 		color: #fff;
-		border-color: transparent;
 	}
 }
