@@ -1,0 +1,23 @@
+-var classes = ['', 'pseudo-hover', 'pseudo-active', 'pseudo-disabled', 'pseudo-focus'];
+
+link(rel="stylesheet", href="./style.css")
+
+.content
+	h2 button
+	section
+		each className in classes
+			.column
+				div.title .button.#{className}
+				button(class=className).button Click me!
+	h2 button--primary
+	section
+		each className in classes
+			.column
+				div.title .button.button--primary.#{className}
+				button(class=className).button.button--primary Click me!
+	h2 button--circular
+	section
+		each className in classes
+			.column
+				div.title .button.button--circular.#{className}
+				button(class=className).button.button--circular +
