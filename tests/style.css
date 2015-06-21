@@ -1,4 +1,4 @@
-.button {
+.cnvs-button {
   padding: 10px;
   position: relative;
   background: transparent;
@@ -12,7 +12,7 @@
   transition: background 0.3s, color 0.3s;
 }
 
-.button:after {
+.cnvs-button:after {
   content: ' ';
   top: -4px;
   bottom: -4px;
@@ -22,50 +22,50 @@
   border: 1px solid transparent;
 }
 
-.button:hover,
-.button.pseudo-hover {
+.cnvs-button:hover,
+.cnvs-button.pseudo-hover {
   background: #f2f2f2;
   border-color: #b3b3b3;
 }
 
-.button:active,
-.button.pseudo-active {
+.cnvs-button:active,
+.cnvs-button.pseudo-active {
   background: #e6e6e6;
 }
 
-.button:disabled,
-.button.pseudo-disabled {
+.cnvs-button:disabled,
+.cnvs-button.pseudo-disabled {
   background: #eee;
   color: #aaa;
   box-shadow: none;
 }
 
-.button:focus:after,
-.button.pseudo-focus:after {
+.cnvs-button:focus:after,
+.cnvs-button.pseudo-focus:after {
   border-color: rgba(22, 122, 198, 0.4);
 }
 
-.button--primary {
+.cnvs-button--primary {
   background: #167ac6;
   color: #fff;
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.23), 0 3px 12px rgba(0, 0, 0, 0.16);
 }
 
-.button--primary:hover,
-.button--primary.pseudo-hover {
+.cnvs-button--primary:hover,
+.cnvs-button--primary.pseudo-hover {
   background: #2895e7;
   color: #fff;
   border-color: transparent;
 }
 
-.button--primary:active,
-.button--primary.pseudo-active {
+.cnvs-button--primary:active,
+.cnvs-button--primary.pseudo-active {
   background: #136caf;
   color: #fff;
   border-color: transparent;
 }
 
-.button--circular {
+.cnvs-button--circular {
   width: 50px;
   height: 50px;
   background: #167ac6;
@@ -75,18 +75,22 @@
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.23), 0 3px 12px rgba(0, 0, 0, 0.16);
 }
 
-.button--circular:hover,
-.button--circular.pseudo-hover {
+.cnvs-button--circular:hover,
+.cnvs-button--circular.pseudo-hover {
   background: #2895e7;
   color: #fff;
   border-color: transparent;
 }
 
-.button--circular:active,
-.button--circular.pseudo-active {
+.cnvs-button--circular:active,
+.cnvs-button--circular.pseudo-active {
   background: #136caf;
   color: #fff;
   border-color: transparent;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body,

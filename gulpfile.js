@@ -23,6 +23,6 @@ gulp.task('html', function(){
 gulp.task('serve', serve('./tests/'));
 
 gulp.task('default', ['css', 'html', 'serve'], function(){
-	gulp.watch('./tests/style.scss', ['css']);
+	gulp.watch('**/*.scss', ['css']);
 	gulp.watch('./tests/index.jade', ['html']);
 });
