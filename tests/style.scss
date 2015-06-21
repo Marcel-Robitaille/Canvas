@@ -1,0 +1,25 @@
+@import '../src/buttons';
+
+body,
+html{
+	margin: 0;
+	padding: 0;
+	font-family: lato;
+}
+h2{
+	padding: 0 10px;
+}
+section{
+	width: 100%;
+	padding: 0 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+	.column{
+		flex: 1;
+	}
+		.title{
+			padding: 10px 0;
+			font-size: 12px;
+		}

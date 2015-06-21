@@ -8,21 +8,21 @@ var serve         = require('gulp-serve');
 
 
 gulp.task('css', function(){
-	return gulp.src('./style.scss')
+	return gulp.src('./tests/style.scss')
 		.pipe(sass())
 		.pipe(rework(pseudoclasses({preserveBeforeAfter: true})))
-		.pipe(gulp.dest('./'));
+		.pipe(gulp.dest('./tests/'));
 });
 
 gulp.task('html', function(){
-	return gulp.src('./index.jade')
+	return gulp.src('./tests/index.jade')
 		.pipe(jade())
-		.pipe(gulp.dest('./'));
+		.pipe(gulp.dest('./tests/'));
 });
 
-gulp.task('serve', serve('./'));
+gulp.task('serve', serve('./tests/'));
 
 gulp.task('default', ['css', 'html', 'serve'], function(){
-	gulp.watch('./style.scss', ['css']);
-	gulp.watch('./index.jade', ['html']);
+	gulp.watch('./tests/style.scss', ['css']);
+	gulp.watch('./tests/index.jade', ['html']);
 });
